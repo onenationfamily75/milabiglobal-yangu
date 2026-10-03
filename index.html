@@ -3,13 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Milabi Global Storefront | Baby Gear, Ride-Ons, Electronics, Appliances &amp; Family Essentials</title>
-  <meta name="description" content="Complete Milabi Global e-commerce storefront featuring 1,800 in-stock products across 41 categories with cart, product details, buyer delivery details form, and WhatsApp order confirmation (+254786781665)." />
-  <meta property="og:title" content="Milabi Global Storefront | Complete Catalog" />
-  <meta property="og:description" content="Complete Milabi Global e-commerce storefront featuring 1,800 in-stock products across 41 categories with cart, product details, buyer delivery details form, and WhatsApp order confirmation (+254786781665)." />
+  <title>Milabi Global – Baby Gear, Electronics &amp; Home Store Kenya</title>
+  <meta name="description" content="Shop 1,800+ in-stock baby walkers, ride-ons, electronics, kitchenware, and home appliances in Kenya. Fast countrywide delivery &amp; WhatsApp confirmation." />
+  <meta name="keywords" content="Milabi Global, online shopping Kenya, baby walkers Nairobi, ride on cars Kenya, home appliances Kenya, kitchenware, smart TVs Kenya, phones and tablets, lighting chandeliers, family essentials" />
+  <meta name="author" content="Milabi Global" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#088178" />
+  <link rel="canonical" href="https://milabiglobal.shop/" id="canonical-link" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- OpenGraph / Facebook / WhatsApp Social Share Cards -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Milabi Global" />
+  <meta property="og:locale" content="en_KE" />
+  <meta property="og:url" content="https://milabiglobal.shop/" id="og-url-meta" />
+  <meta property="og:title" content="Milabi Global – Baby Gear, Electronics &amp; Home Store Kenya" />
+  <meta property="og:description" content="Shop 1,800+ in-stock baby walkers, ride-ons, electronics, kitchenware, and home appliances in Kenya. Fast countrywide delivery &amp; WhatsApp confirmation." />
+  <meta property="og:image" content="https://media.milabiglobal.com/media/asset-20260427t120223000000000-0014e1-441fa56f/original.png" />
+  <meta property="og:image:alt" content="Milabi Global Kenya Online Storefront" />
+
+  <!-- Twitter / X Large Image Cards -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Milabi Global – Baby Gear, Electronics &amp; Home Store Kenya" />
+  <meta name="twitter:description" content="Shop 1,800+ in-stock baby walkers, ride-ons, electronics, kitchenware, and home appliances in Kenya. Fast countrywide delivery &amp; WhatsApp confirmation." />
+  <meta name="twitter:image" content="https://media.milabiglobal.com/media/asset-20260427t120223000000000-0014e1-441fa56f/original.png" />
+
   <link rel="icon" href="https://milabiglobal.com/assets/storefront/images/favicon.png?v=347183c6985a9176" />
+  <link rel="apple-touch-icon" href="https://media.milabiglobal.com/media/asset-20260427t120223000000000-0014e1-441fa56f/original.png" />
+
+  <!-- Schema.org JSON-LD Structured Data (OnlineStore + WebSite SearchAction + FAQPage) -->
+  <script type="application/ld+json" id="schema-org-store">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "OnlineStore",
+        "@id": "https://milabiglobal.shop/#organization",
+        "name": "Milabi Global",
+        "url": "https://milabiglobal.shop/",
+        "logo": "https://media.milabiglobal.com/media/asset-20260427t120223000000000-0014e1-441fa56f/original.png",
+        "image": "https://media.milabiglobal.com/media/asset-20260427t120223000000000-0014e1-441fa56f/original.png",
+        "description": "Shop 1,800+ in-stock baby walkers, ride-ons, electronics, kitchenware, and home appliances in Kenya with fast delivery and WhatsApp order confirmation.",
+        "telephone": "+254786781665",
+        "priceRange": "KES",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+254786781665",
+            "contactType": "customer service",
+            "areaServed": "KE",
+            "availableLanguage": ["English", "Swahili"]
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://milabiglobal.shop/#website",
+        "url": "https://milabiglobal.shop/",
+        "name": "Milabi Global",
+        "publisher": {
+          "@id": "https://milabiglobal.shop/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://milabiglobal.shop/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -174,7 +242,7 @@
         slug = slugify(title) + "-" + customSlug.slice(1);
       }
       const pct = (oldPriceNum > price && price > 0) ? Math.round((1 - price / oldPriceNum) * 100) + "% OFF" : (oldPriceNum > 0 ? "Sale" : "In Stock");
-      const productUrl = "https://milabiglobal.com/products/" + slug;
+      const productUrl = "https://milabiglobal.shop/products/" + slug;
       return {
         slug,
         title,
