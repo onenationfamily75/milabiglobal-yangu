@@ -1,0 +1,6 @@
+{
+  "name": "Milabi Global Storefront",
+  "description": "Complete Milabi Global e-commerce storefront featuring 1,800 in-stock products across 41 categories with cart, product details, buyer delivery details form, and WhatsApp order confirmation (+254786781665).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
